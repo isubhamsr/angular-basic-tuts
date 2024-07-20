@@ -1,0 +1,36 @@
+<!-- <h1>This is user profile</h1>
+
+<h4>Name - {{name}}, Age - {{age}}, Salary  - {{salary | currency:"INR"}}</h4>
+<h2>{{phoneNumber | contryCode}}</h2>
+<button [disabled]="isButtonDisable">Click Me</button>
+
+<h3>Inpur value {{inputValue}}</h3>
+<input type="text" (input)="onChange($event)"  [value]="inputValue"> 
+<input type="text" [(ngModel)]="inputValue" />
+
+<div>
+    @for(user of users;track user.name){
+        @if(user.salary >= 10000){
+            <h4>Name - {{user.name}}, Status - {{user.isSingle?"Single" : "Coder"}}, Salary - {{user.salary}}</h4>
+        }
+        @else{
+            <h4>Name - {{user.name}}, Status - {{user.isSingle?"Single" : "Coder"}}, Salary - Hidden</h4>
+        }
+    }
+</div>
+
+<hr>
+
+<div *ngFor="let user of users">
+    <h4>Name - {{user.name}}, Status - {{user.isSingle?"Single" : "Coder"}}, Salary - {{user.salary}}</h4>
+</div>
+
+<h1>User - {{name}}, Status - {{isSingle?"Single" : "Coder"}}, Salary - {{salary}}</h1>
+
+<button (click)="sendData()">Send Data</button>
+
+<h3>Input value in Child {{parentTitle}}</h3>
+<input type="text" (input)="onChange($event)" [value]="parentTitle" >  -->
+
+<h4 appHighlight>Name - {{name}}, Age - {{age}}, Salary  - {{salary | currency:"INR"}}</h4>
+<h2>{{phoneNumber | contryCode}}</h2>
